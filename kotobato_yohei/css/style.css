@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
+  background-size: cover;
+  color: white !important;
+/*  text-align: center;*/
+  font-size: 1.6rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* --------------------------------
+ * parts
+ * -------------------------------- */
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+
+.buttons {
+    margin-left: 95px;
+}
+
+.button {
+  opacity: 0.7;
+  display: inline-block;
+  width: 155px;
+  padding: 5px ;
+  border-radius: 30px;
+  background-color: #cc3366;
+  color: #fff;
+  text-decoration: none !important;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+.button:hover {
+  opacity: 1 !important;
+  color: white;
+}
+.button-showy {
+  background-color: #006699;
+}
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 170px 30px 80px 150px;
+}
+
+.site-title-sub {
+  margin: 60px 0 30px 80px;
+  letter-spacing: 1px;
+  font-size: 2.4rem;
+}
+/*.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}*/
+.site-title {
+  margin: 10px 0 40px 95px;
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+}
+
+.site-description {
+  margin: 5px 0 50px 105px;
+  color: #888;
+  font-size: 1.1rem;
+}
+.buttons .button {
+  margin: 10px;
+}
+
+/* --------------------------------
+ * logo
+ * -------------------------------- */
+.logo {
+  margin-top: 84px;
+  opacity: 0.7;
+}
+
+img{
+   max-width: 300px;
+   height: auto;
+}
+
+
+/* --------------------------------
+ * lモーダルウィンドウ
+ * -------------------------------- */
+#modal-content {
+width: 50% ;
+margin: 0 ;
+padding: 10px 20px ;
+border: 2px solid #aaa ;
+background: #fff ;
+position: fixed ;
+display: none ;
+z-index: 2 ;
+color: black;
+}
+
+#modal-content-innar{
+ margin:0 auto;
+ width:80%;
+}
+
+#modal-overlay {
+z-index: 1;
+display: none ;
+position: fixed ;
+top: 0 ;
+left: 0 ;
+width: 100% ;
+height: 120% ;
+background-color: rgba( 0,0,0, 0.75 ) ;
+}
+
+/*.button-link {
+ color: #00f ;
+ text-decoration: underline ;
+}
+ 
+.button-link:hover {
+ cursor: pointer ;
+ color: #f00 ;
+}*/
