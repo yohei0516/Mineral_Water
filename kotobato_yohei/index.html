@@ -43,8 +43,28 @@
     <div id="modal-content">
       <div id="modal-content-innar">
         <!-- モーダルウィンドウのコンテンツ開始 -->
-        <p class="red bold">モーダルウィンドウのデモ
-        これはモーダルウィンドウです。<br />左下の「閉じる」か、背景をクリックすると終了します。</p>
+        <p class="red bold">
+
+          <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css"/>
+          <link href="https://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+          <div class="signin cf">
+            <div class="avatar"></div>
+            <form>
+              <div class="inputrow">
+                <input type="text" id="name" placeholder="メールアドレス"/>
+                <label class="ion-person" for="name"></label>
+              </div>
+              <div class="inputrow">
+                <input type="password" id="pass" placeholder="パスワード"/>
+                <label class="ion-locked" for="pass"></label>
+              </div>
+              <input type="checkbox" name="remember" id="remember"/>
+              <label class="radio" for="remember">ログイン情報を記憶する</label>
+              <input type="submit" value="Login"/>
+            </form>
+          </div>
+
+        </p>
         <p><a id="modal-close" class="button-link">閉じる</a></p>
       </div>
      <!-- モーダルウィンドウのコンテンツ終了 -->
