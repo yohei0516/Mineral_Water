@@ -110,11 +110,11 @@ body {
  * -------------------------------- */
 .logo {
   margin-top: 84px;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 img{
-   max-width: 300px;
+   max-width: 255px;
    height: auto;
 }
 
