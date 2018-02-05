@@ -19,15 +19,15 @@
 	<link rel="stylesheet" href="css/main/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/main/bootstrap.css">
-
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/main/magnific-popup.css">
-
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/main/style.css">
-
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- モーダルウィンドウ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  	<script src="js/login.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -57,7 +57,7 @@
 								<li><a href="#">Django</a></li>
 							</ul>
 						</li> -->
-						<li><a href="#">投稿</a></li>
+						<li><a id="modal-open" class="buttons button button-link">投稿</a></li>
 						<li><a href="#">ジャンル</a></li>
 						<li><a href="#">検索</a></li>
 						<li><a href="profile.html">プロフィール</a></li>
@@ -255,6 +255,33 @@
 		</div>
 	</footer>
 	</div>
+
+	<!-- ここからモーダルウィンドウ -->
+    <div id="modal-content">
+      <div id="modal-content-innar">
+        <!-- モーダルウィンドウのコンテンツ開始 -->
+        <p class="red bold">
+          <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css"/>
+          <link href="https://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+          <div class="signin cf">
+            <div class="avatar"></div>
+            <form action="">
+	              <div class="inputrow">
+	              	<textarea type="text" id="name" required="required" placeholder="コトバをとどけよう" cols="55" rows="2"></textarea>
+	               	<!-- <input type="text" id="name" required="required" placeholder="コトバをとどけよう"/> -->
+	              </div>
+	              <div class="inputrow">
+	              	<textarea type="text" id="pass" required="required" placeholder="エピソードを教えてください" cols="55" rows="5"></textarea>
+	                <!-- <input type="text" id="pass" required="required" placeholder="エピソードを教えてください"/> -->
+	              </div>
+	              <input type="submit" value="投稿する"/>
+            </form>
+          </div>
+        </p>
+        <p><a id="modal-close" class="button-link">閉じる</a></p>
+      </div>
+     <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
