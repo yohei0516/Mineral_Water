@@ -110,11 +110,11 @@ body {
  * -------------------------------- */
 .logo {
   margin-top: 84px;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 img{
-   max-width: 300px;
+   max-width: 255px;
    height: auto;
 }
 
@@ -188,7 +188,7 @@ background-color: rgba( 0,0,0, 0.75 ) ;
   width: 300px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #4682b4;/*rgba(69,154,255,1);*/
+  background-color: #3B5998;/*rgba(69,154,255,1);*/
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -343,4 +343,3 @@ input[type="checkbox"]:checked + label:after {
 .cf {
   *zoom: 1;
 }
-
